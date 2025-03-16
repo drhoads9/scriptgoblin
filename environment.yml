@@ -1,0 +1,14 @@
+name: rag-chatbot
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10  # Ensures a consistent Python version
+  - pip
+  - numpy
+  - faiss-cpu  # FAISS for vector search (CPU version for Mac compatibility)
+  - openai  # API access to OpenAI models
+  - python-docx  # For parsing .docx files
+  - python-dotenv
+  - pip:
+      - tiktoken  # Tokenization (required for OpenAI API)
